@@ -30,6 +30,8 @@ func Hellos (names []string) (map[string]string, error) {
 
 	// Loop through the received slice of names, calling
 	// the Hello function to get a message for each name
+	// when you use range on an array, it returns the index
+	// and value
 	for _, name := range names {
 		message, err := Hello(name)
 		if err != nil {
